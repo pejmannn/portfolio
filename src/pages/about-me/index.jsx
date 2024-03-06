@@ -1,41 +1,67 @@
 const AboutMe = () => {
   return (
     <div>
-      <h1 className="text-center 2xl:text-2xl 2xl:pt-32 font-bold">
+      <h1 className="text-center 2xl:text-2xl 2xl:pt-32 font-bold
+      xl:text-xl xl:pt-16
+      lg:text-xl lg:pt-16
+      md:text-lg md:pt-16
+      sm:text-md sm:pt-16
+      ">
         -ABOUT ME-
       </h1>
-      <div className="flex justify-center 2xl:pt-10 2xl:gap-7">
+      <div className="flex justify-center 2xl:pt-10 2xl:gap-7
+      xl:pt-6 xl:gap-5
+      lg:pt-10 lg:gap-5
+      md:pt-10 md:gap-5
+      sm:pt-10 sm:gap-5">
         <div>
           <img
-            className="2xl:w-[450px] 2xl:h-[450px]"
+            className="2xl:w-[450px] 2xl:h-[450px]
+            xl:w-[350px] xl:h-[350px]
+            lg:w-[300px] lg:h-[300px]
+            md:w-[250px] md:h-[250px]
+            sm:w-[250px] sm:h-[250px]"
             src="/public/images/image1.png"
             alt=""
           />
         </div>
         <div>
-          <div className="2xl:w-[450px] 2xl:h-[300px]">
-            <p className="text-lg">
+          <div className="2xl:w-[450px] 2xl:h-[300px]
+          xl:w-[350px] xl:h-[200px]
+          lg:w-[300px] lg:h-[200px]
+          md:w-[250px] md:h-[150px]
+          sm:w-[250px] sm:h-[150px]">
+            <p className="text-md md:text-sm sm:text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               a feugiat tellus. Vivamus lorem eros, tempus a orci vel, feugiat
               viverra ligula. Ut mauris metus, feugiat vitae suscipit sit amet,
               viverra eu elit. Interdum et malesuada fames ac ante ipsum primis
-              in faucibus. Suspendisse purus velit, posuere nec augue eu, cursus
-              porta metus. Sed luctus sapien sit amet justo tempus, ac rutrum
-              augue viverra. Donec consectetur varius urna vel fermentum. amet
-              justo tempus, ac rutrum augue viverra. Donec. rutrum augue
-              viverra. Donec.
+              in faucibus.
             </p>
           </div>
           <div>
-            <h1 className="text-center 2xl:text-2xl font-bold 2xl:pt-7 py-2">
+            <h1 className="text-center 2xl:text-2xl font-bold 2xl:pt-7 py-2
+            xl:text-2xl xl:pt-9
+            md:text-1xl md:pt-6
+            sm:text-lg sm:pt-6">
               STACKS
             </h1>
             <div className="w-2/12 bg-white h-[1px] mx-auto" />
           </div>
-          <div className="flex justify-between items-center 2xl:pt-7">
+          <div className="flex justify-between items-center 2xl:pt-7
+          xl:pt-4
+          lg:pt-4
+          md:pt-2
+          sm:pt-2
+
+          ">
             <div>
               <svg
-                className="2xl:w-11 2xl:h-13"
+                className="2xl:w-11 2xl:h-13
+                xl:w-8 xl:h-10
+                lg:w-8 lg:h-10
+                md:w-7 md:h-7
+                sm:w-6 sm:h-6"
                 width="50"
                 height="50"
                 viewBox="0 0 50 50"
@@ -61,7 +87,11 @@ const AboutMe = () => {
             </div>
             <div>
               <svg
-                className="2xl:w-11 2xl:h-13"
+                className="2xl:w-11 2xl:h-13
+                xl:w-8 xl:h-10
+                lg:w-8 lg:h-10
+                md:w-7 md:h-7
+                sm:w-6 sm:h-6"
                 width="53"
                 height="60"
                 viewBox="0 0 53 60"
@@ -87,7 +117,11 @@ const AboutMe = () => {
             </div>
             <div>
               <svg
-                className="2xl:w-11 2xl:h-13"
+                className="2xl:w-11 2xl:h-13
+                xl:w-8 xl:h-10
+                lg:w-8 lg:h-10
+                md:w-7 md:h-7
+                sm:w-6 sm:h-6"
                 width="68"
                 height="40"
                 viewBox="0 0 68 40"
@@ -114,7 +148,11 @@ const AboutMe = () => {
             </div>
             <div>
               <svg
-                className="2xl:w-11 2xl:h-13"
+                className="2xl:w-11 2xl:h-13
+                xl:w-8 xl:h-10
+                lg:w-8 lg:h-10
+                md:w-7 md:h-7
+                sm:w-6 sm:h-6"
                 width="37"
                 height="50"
                 viewBox="0 0 37 50"
@@ -261,7 +299,11 @@ const AboutMe = () => {
             </div>
             <div>
               <svg
-                className="2xl:w-11 2xl:h-13"
+                className="2xl:w-11 2xl:h-13
+                xl:w-8 xl:h-10
+                lg:w-8 lg:h-10
+                md:w-7 md:h-7
+                sm:w-6 sm:h-6"
                 width="51"
                 height="50"
                 viewBox="0 0 51 50"
@@ -289,7 +331,11 @@ const AboutMe = () => {
             </div>
             <div>
               <svg
-                className="2xl:w-11 2xl:h-13"
+                className="2xl:w-11 2xl:h-13
+                xl:w-8 xl:h-10
+                lg:w-8 lg:h-10
+                md:w-7 md:h-7
+                sm:w-6 sm:h-6"
                 width="51"
                 height="50"
                 viewBox="0 0 51 50"

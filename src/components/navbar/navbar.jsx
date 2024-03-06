@@ -1,10 +1,20 @@
 import "./navbar.css";
 const Navbar = () => {
   return (
-    <div className="flex m-auto 2xl:w-1/4 2xl:h-20 bg-nav rounded-full fixed left-0 right-0 bottom-12">
-      <div className="flex 2xl:ml-6">
-        <div className="2xl:mx-7 2xl:mt-5">
+    <div
+      className="flex justify-around items-center m-auto w-1/4 2xl:h-20 bg-nav rounded-full fixed left-0 right-0 bottom-12
+    xl:h-12
+    lg:h-10
+    md:h-9
+    sm:h-8">
+        <div
+        >
           <svg
+            className="2xl:w-9 2xl:h-9
+            xl:w-8 xl:h-8
+            lg:w-6 lg:h-6
+            md:w-5 md:h-5
+            sm:w-5 sm:h-5"
             width="31"
             height="31"
             viewBox="0 0 31 31"
@@ -29,8 +39,14 @@ const Navbar = () => {
             />
           </svg>
         </div>
-        <div className="2xl:mx-7 2xl:mt-5  ">
+        <div
+        >
           <svg
+            className="2xl:w-9 2xl:h-9
+            xl:w-8 xl:h-8
+            lg:w-7 lg:h-7
+            md:w-5 md:h-5
+            sm:w-5 sm:h-5"
             width="33"
             height="33"
             viewBox="0 0 33 33"
@@ -57,8 +73,14 @@ const Navbar = () => {
             />
           </svg>
         </div>
-        <div className="2xl:mx-7 2xl:mt-5">
+        <div
+        >
           <svg
+            className="2xl:w-9 2xl:h-9
+            xl:w-8 xl:h-8
+            lg:w-7 lg:h-7
+            md:w-5 md:h-5
+            sm:w-5 sm:h-5"  
             width="33"
             height="33"
             viewBox="0 0 33 33"
@@ -97,8 +119,14 @@ const Navbar = () => {
             />
           </svg>
         </div>
-        <div className="2xl:mx-7 2xl:mt-5">
+        <div
+        >
           <svg
+            className="2xl:w-9 2xl:h-9
+            xl:w-8 xl:h-8
+            lg:w-7 lg:h-7
+            md:w-5 md:h-5
+            sm:w-5 sm:h-5"
             width="33"
             height="33"
             viewBox="0 0 33 33"
@@ -117,15 +145,21 @@ const Navbar = () => {
           </svg>
         </div>
         <div>
-          <h1 className="2xl:text-5xl 2xl:ml-1 2xl:mt-3 text-[#b3b3b36b] font-light">
+          <h1 className="2xl:text-5xl font-thin text-[#6a6a6a] opacity-65
+          xl:text-3xl
+          lg:text-2xl
+          md:text-2xl"
+          >
             |
           </h1>
         </div>
         <div>
-          <h1 className="2xl:text-[1.2rem] 2xl:mt-6 2xl:ml-2">EN</h1>
+          <h1 className="2xl:text-2xl xl:text-lg lg:text-sm md:text-[0.8rem] sm:text-[0.7rem]"
+          >
+            EN
+          </h1>
         </div>
       </div>
-    </div>
   );
 };
 
