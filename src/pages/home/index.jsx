@@ -4,14 +4,15 @@ import { HomeStyles } from "./styles.js";
 const Home = () => {
   return (
     <article className="flex flex-col gap-6 items-center">
-      <div>
+      <section>
         <img
           className={HomeStyles.images}
           src="/public/images/pejman.jpg"
-          alt=""
+          alt="Pejman Avatar"
         />
-      </div>
-      <div className="text-center">
+      </section>
+
+      <section className="text-center">
         <h1
           className="2xl:text-4xl font-bold 2xl:mt-5
         xl:text-2xl xl:mt-3
@@ -33,15 +34,12 @@ const Home = () => {
         >
           FRONT-END DEVELOPER
         </h3>
-      </div>
-      <div
-        className="flex gap-4 flex-col md:flex-row
-      "
-      >
-        <Button title="Contact 🤙 "  />
+      </section>
+
+      <section className="flex gap-4 flex-col md:flex-row">
+        <Button title="Contact 🤙 " />
         <Button title="Resume 📥" type="outline" />
-       
-      </div>
+      </section>
     </article>
   );
 };
