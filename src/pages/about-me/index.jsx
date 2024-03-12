@@ -6,21 +6,24 @@ const AboutMe = () => {
       lg:text-xl lg:pt-16
       md:text-lg md:pt-16
       sm:text-md sm:pt-16
+      text-md pt-16
       ">
         -ABOUT ME-
       </h1>
-      <div className="flex justify-center 2xl:pt-10 2xl:gap-7
-      xl:pt-6 xl:gap-5
-      lg:pt-10 lg:gap-5
-      md:pt-10 md:gap-5
-      sm:pt-10 sm:gap-5">
+      <div className="flex 2xl:flex-row 2xl:justify-center 2xl:pt-10 2xl:gap-7
+      xl:pt-6 xl:gap-5 xl:flex-row xl:justify-center
+      lg:pt-10 lg:gap-5 lg:flex-row lg:justify-center
+      md:pt-10 md:gap-5 md:flex-row md:justify-center
+      sm:pt-10 sm:gap-5 sm:flex-row sm:justify-center
+      pt-3 flex-col items-center ">
         <div>
           <img
             className="2xl:w-[450px] 2xl:h-[450px]
             xl:w-[350px] xl:h-[350px]
             lg:w-[300px] lg:h-[300px]
             md:w-[250px] md:h-[250px]
-            sm:w-[250px] sm:h-[250px]"
+            sm:w-[250px] sm:h-[250px]
+            w-[200px] h-[200px]"
             src="/public/images/image1.png"
             alt=""
           />
@@ -30,8 +33,9 @@ const AboutMe = () => {
           xl:w-[350px] xl:h-[200px]
           lg:w-[300px] lg:h-[200px]
           md:w-[250px] md:h-[150px]
-          sm:w-[250px] sm:h-[150px]">
-            <p className="text-md md:text-sm sm:text-sm">
+          sm:w-[250px] sm:h-[150px]
+          w-[150px] h-[100px]">
+            <p className="text-md md:text-sm sm:text-sm text-[0.5rem] 2xl:pt-0 xl:pt-0 lg:pt-0 md:pt-0 sm :pt-0 pt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               a feugiat tellus. Vivamus lorem eros, tempus a orci vel, feugiat
               viverra ligula. Ut mauris metus, feugiat vitae suscipit sit amet,
@@ -43,7 +47,8 @@ const AboutMe = () => {
             <h1 className="text-center 2xl:text-2xl font-bold 2xl:pt-7 py-2
             xl:text-2xl xl:pt-9
             md:text-1xl md:pt-6
-            sm:text-lg sm:pt-6">
+            sm:text-lg sm:pt-6
+            text-md pt-6">
               STACKS
             </h1>
             <div className="w-2/12 bg-white h-[1px] mx-auto" />
@@ -53,7 +58,7 @@ const AboutMe = () => {
           lg:pt-4
           md:pt-2
           sm:pt-2
-
+          pt-1
           ">
             <div>
               <svg
@@ -61,7 +66,9 @@ const AboutMe = () => {
                 xl:w-8 xl:h-10
                 lg:w-8 lg:h-10
                 md:w-7 md:h-7
-                sm:w-6 sm:h-6"
+                sm:w-6 sm:h-6
+                w-6 h-6 mx-1 
+                "
                 width="50"
                 height="50"
                 viewBox="0 0 50 50"
@@ -91,7 +98,8 @@ const AboutMe = () => {
                 xl:w-8 xl:h-10
                 lg:w-8 lg:h-10
                 md:w-7 md:h-7
-                sm:w-6 sm:h-6"
+                sm:w-6 
+                w-6 h-6sm:h-6"
                 width="53"
                 height="60"
                 viewBox="0 0 53 60"
@@ -121,7 +129,8 @@ const AboutMe = () => {
                 xl:w-8 xl:h-10
                 lg:w-8 lg:h-10
                 md:w-7 md:h-7
-                sm:w-6 sm:h-6"
+                sm:w-6 
+                w-6 h-6sm:h-6"
                 width="68"
                 height="40"
                 viewBox="0 0 68 40"
@@ -152,7 +161,8 @@ const AboutMe = () => {
                 xl:w-8 xl:h-10
                 lg:w-8 lg:h-10
                 md:w-7 md:h-7
-                sm:w-6 sm:h-6"
+                sm:w-6 
+                w-6 h-6sm:h-6"
                 width="37"
                 height="50"
                 viewBox="0 0 37 50"
@@ -303,7 +313,8 @@ const AboutMe = () => {
                 xl:w-8 xl:h-10
                 lg:w-8 lg:h-10
                 md:w-7 md:h-7
-                sm:w-6 sm:h-6"
+                sm:w-6 
+                w-6 h-6sm:h-6"
                 width="51"
                 height="50"
                 viewBox="0 0 51 50"
@@ -335,7 +346,8 @@ const AboutMe = () => {
                 xl:w-8 xl:h-10
                 lg:w-8 lg:h-10
                 md:w-7 md:h-7
-                sm:w-6 sm:h-6"
+                sm:w-6 
+                w-6 h-6sm:h-6"
                 width="51"
                 height="50"
                 viewBox="0 0 51 50"

@@ -6,16 +6,18 @@ const Contact = () => {
       xl:text-xl xl:pt-16
       lg:text-xl lg:pt-16
       md:text-lg md:pt-16
-      sm:text-md sm:pt-16"
+      sm:text-md sm:pt-16
+      text-md pt-16"
       >
         -CONTACT ME-
       </h1>
       <div
-        className="flex justify-center 2xl:pt-10 2xl:gap-9
-      xl:pt-6 xl:gap-7
-      lg:pt-10 lg:gap-7
-      md:pt-10 md:gap-7
-      sm:pt-10 sm:gap-5"
+        className="flex 2xl:flex-row 2xl:justify-center 2xl:pt-10 2xl:gap-9
+      xl:pt-6 xl:gap-7 xl:flex-row xl:justify-center
+      lg:pt-10 lg:gap-7 lg:flex-row lg:justify-center
+      md:pt-10 md:gap-7 md:flex-row md:justify-center
+      sm:pt-10 sm:gap-5 sm:flex-row sm:justify-center
+      pt-3 flex-col item-center "
       >
         <div>
           <img
@@ -24,7 +26,8 @@ const Contact = () => {
             xl:w-[350px] xl:h-[350px]
             lg:w-[300px] lg:h-[300px]
             md:w-[250px] md:h-[250px]
-            sm:w-[250px] sm:h-[250px]"
+            sm:w-[250px] sm:h-[250px]
+            w-[200px] h-[200px]"
             alt=""
           />
         </div>

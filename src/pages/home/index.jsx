@@ -8,6 +8,7 @@ const Home = () => {
           lg:w-[203px] lg:h-[203px] lg:mt-16
           md:w-[170px] md:h-[170px] md:mt-16
           sm:w-[160px] sm:h-[160px] sm:mt-16
+          w-[170px] h-[170px] mt-20
           "
           src="/public/images/pejman.jpg"
           alt=""
@@ -20,6 +21,7 @@ const Home = () => {
         lg:text-2xl lg:mt-3
         md:text-xl md:mt-2
         sm:text-lg sm:mt-1
+        text-md mt-1
         "
         >
           PEJMAN KHANI
@@ -29,7 +31,8 @@ const Home = () => {
         xl:text-sm
         lg:text-[0.9rem]
         md:text-[0.7rem]
-        sm:text-[0.7rem]"
+        sm:text-[0.7rem]
+        text-[0.6rem]"
         >
           FRONT-END DEVELOPER
         </h3>
@@ -40,6 +43,7 @@ const Home = () => {
       lg:mt-4
       md:mt-3
       sm:mt-3
+      mt-4
       "
       >
         <button
@@ -48,6 +52,7 @@ const Home = () => {
         lg:px-5 lg:mr-2 lg:text-sm
         md:px-4 md:mr-2 md:text-sm
         sm:px-4 sm:mr-1 sm:text-[0.8rem]
+        px-4 py-[1px] mr-1 text-[0.7rem]
         "
         >
           Contact
@@ -57,6 +62,7 @@ const Home = () => {
         lg:px-5 lg:ml-2 lg:text-sm
         md:px-4 md:ml-2 md:text-sm
         sm:px-4 sm:ml-1 sm:text-[0.8rem]
+        px-4 py-[1px] ml-1 text-[0.7rem]
         ">
           Resume
         </button>
