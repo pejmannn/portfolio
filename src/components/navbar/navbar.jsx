@@ -1,22 +1,13 @@
+import { NavbarStyle } from "./style";
 import "./navbar.css";
 const Navbar = () => {
   return (
     <div
-      className="flex justify-around items-center m-auto 2xl:w-1/4 2xl:h-20 bg-nav rounded-full fixed left-0 right-0 bottom-12
-    xl:h-12 xl:w-1/4
-    lg:h-10 lg:w-1/4
-    md:h-9 md:w-1/4
-    sm:h-8 sm:w-1/4
-    h-8 w-3/6"
+      className={NavbarStyle.navbarMain}
     >
       <div>
         <svg
-          className="2xl:w-9 2xl:h-9
-            xl:w-8 xl:h-8
-            lg:w-6 lg:h-6
-            md:w-5 md:h-5
-            sm:w-5 sm:h-5
-            w-4 h-4"
+          className={NavbarStyle.navIcons}
           width="31"
           height="31"
           viewBox="0 0 31 31"
@@ -43,12 +34,7 @@ const Navbar = () => {
       </div>
       <div>
         <svg
-          className="2xl:w-9 2xl:h-9
-            xl:w-8 xl:h-8
-            lg:w-7 lg:h-7
-            md:w-5 md:h-5
-            sm:w-5 sm:h-5
-            w-4 h-4"
+          className={NavbarStyle.navIcons}
           width="33"
           height="33"
           viewBox="0 0 33 33"
@@ -77,12 +63,7 @@ const Navbar = () => {
       </div>
       <div>
         <svg
-          className="2xl:w-9 2xl:h-9
-            xl:w-8 xl:h-8
-            lg:w-7 lg:h-7
-            md:w-5 md:h-5
-            sm:w-5 sm:h-5
-            w-4 h-4"
+          className={NavbarStyle.navIcons}
           width="33"
           height="33"
           viewBox="0 0 33 33"
@@ -123,12 +104,7 @@ const Navbar = () => {
       </div>
       <div>
         <svg
-          className="2xl:w-9 2xl:h-9
-            xl:w-8 xl:h-8
-            lg:w-7 lg:h-7
-            md:w-5 md:h-5
-            sm:w-5 sm:h-5
-            w-4 h-4"
+          className={NavbarStyle.navIcons}
           width="33"
           height="33"
           viewBox="0 0 33 33"
@@ -149,15 +125,14 @@ const Navbar = () => {
       <div>
         <h1
           className="2xl:text-5xl font-thin text-[#6a6a6a] opacity-65
-          xl:text-3xl
-          lg:text-2xl
-          md:text-2xl"
+          xl:text-3xl lg:text-2xl md:text-2xl"
         >
           |
         </h1>
       </div>
       <div>
-        <h1 className="2xl:text-2xl xl:text-lg lg:text-sm md:text-[0.8rem] sm:text-[0.7rem] text-[0.6rem]">
+        <h1 className="2xl:text-2xl xl:text-lg lg:text-sm md:text-[0.8rem]
+         sm:text-[0.7rem] text-[0.6rem]">
           EN
         </h1>
       </div>
