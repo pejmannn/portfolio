@@ -1,10 +1,11 @@
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 const navs = [
   {
     name: "home",
     link: "/",
-    icon: "/icons/home.svg",
+    icon: "/icons/Home.svg",
   },
   {
     name: "about",
@@ -14,7 +15,7 @@ const navs = [
   {
     name: "contact",
     link: "/contact-me",
-    icon: "/icons/call.svg",
+    icon: "/icons/Call.svg",
   },
 ];
 
@@ -35,9 +36,11 @@ const Navbar = () => {
       <ul className="flex justify-around">
         {navs.map((nav, index) => {
           return (
-            <div key={`${nav.name}-${index}`}>
+            <li key={`${nav.name}-${index}`}>
+              <Link to={nav.link}>
               <img className="h-8 w-h-8" src={nav.icon} alt={nav.name} />
-            </div>
+              </Link>
+            </li>
           );
         })}
       </ul>
