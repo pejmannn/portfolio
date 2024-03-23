@@ -1,3 +1,10 @@
-<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8561 17.1495C21.3411 22.633 22.5854 16.2892 26.0778 19.7791C29.4446 23.145 31.3797 23.8194 27.114 28.084C26.5796 28.5134 23.1847 33.6796 11.2538 21.752C-0.678533 9.823 4.48468 6.42461 4.91421 5.89043C9.19032 1.61404 9.85306 3.5604 13.2199 6.92633C16.7123 10.4177 10.3712 11.6661 15.8561 17.1495Z" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg className="2xl:w-9 2xl:h-9
+            xl:w-8 xl:h-8
+            lg:w-7 lg:h-7
+            md:w-5 md:h-5
+            sm:w-5 sm:h-5
+            w-4 h-4" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fillRule="evenodd" clipRule="evenodd"
+    d="M15.8561 17.1495C21.3411 22.633 22.5854 16.2892 26.0778 19.7791C29.4446 23.145 31.3797 23.8194 27.114 28.084C26.5796 28.5134 23.1847 33.6796 11.2538 21.752C-0.678533 9.823 4.48468 6.42461 4.91421 5.89043C9.19032 1.61404 9.85306 3.5604 13.2199 6.92633C16.7123 10.4177 10.3712 11.6661 15.8561 17.1495Z"
+    stroke="#FBFBFB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 </svg>

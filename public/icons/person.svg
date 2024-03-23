@@ -1,0 +1,13 @@
+<svg className="2xl:w-9 2xl:h-9
+            xl:w-8 xl:h-8
+            lg:w-7 lg:h-7
+            md:w-5 md:h-5
+            sm:w-5 sm:h-5
+            w-4 h-4" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fillRule="evenodd" clipRule="evenodd"
+    d="M16.479 21.101C11.1611 21.101 6.61964 21.9051 6.61964 25.1252C6.61964 28.3453 11.1323 29.1782 16.479 29.1782C21.797 29.1782 26.3371 28.3728 26.3371 25.154C26.3371 21.9352 21.8258 21.101 16.479 21.101Z"
+    stroke="#FBFBFB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  <path fillRule="evenodd" clipRule="evenodd"
+    d="M16.479 16.5081C19.9689 16.5081 22.7975 13.6782 22.7975 10.1884C22.7975 6.69847 19.9689 3.8699 16.479 3.8699C12.9892 3.8699 10.1593 6.69847 10.1593 10.1884C10.1475 13.6665 12.9577 16.4963 16.4345 16.5081H16.479Z"
+    stroke="#FBFBFB" strokeWidth="1.42857" strokeLinecap="round" strokeLinejoin="round" />
+</svg>
