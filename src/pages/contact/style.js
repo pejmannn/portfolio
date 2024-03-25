@@ -27,5 +27,5 @@ export const ContactStyle = {
     lg:pl-2  lg:rounded-[2px] lg:h-28 lg:text-sm lg:py-1
     md:pl-2  md:rounded-[2px] md:h-20 md:text-sm md:py-1
     sm:pl-2  sm:rounded-[2px] sm:h-20 sm:text-sm sm:py-1`,
-    border: `border-1 border-red-500 shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)]`
+    border: `border-1 border-red-500`
 }
