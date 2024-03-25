@@ -74,11 +74,11 @@ const Contact = () => {
             ref={form}
             onSubmit={formik.handleSubmit}
           >
-            {formik.touched.user_name && formik.errors.user_name ? (
+            {/* {formik.touched.user_name && formik.errors.user_name ? (
               <div className="errors"></div>
-            ) : null}
+            ) : null} */}
             <input
-              className={ContactStyle.input}
+              className={`${ContactStyle.input} ${formik.touched.user_name && formik.errors.user_name && ContactStyle.border}`}
               onChange={formik.handleChange}
               value={formik.values.user_name}
               onBlur={formik.handleBlur}
@@ -86,11 +86,11 @@ const Contact = () => {
               placeholder="Name"
               name="user_name"
             />
-            {formik.touched.user_email && formik.errors.user_email ? (
+            {/* {formik.touched.user_email && formik.errors.user_email ? (
               <div className="errors"></div>
-            ) : null}
+            ) : null} */}
             <input
-              className={ContactStyle.input}
+              className={`${ContactStyle.input} ${formik.touched.user_email && formik.errors.user_email && ContactStyle.border}`}
               onChange={formik.handleChange}
               value={formik.values.user_email}
               onBlur={formik.handleBlur}
@@ -98,12 +98,11 @@ const Contact = () => {
               placeholder="Email"
               name="user_email"
             />
-            {formik.touched.subject && formik.errors.subject ? (
+            {/* {formik.touched.subject && formik.errors.subject ? (
               <div className="errors"></div>
-            ) : null}
+            ) : null} */}
             <input
-              className={ContactStyle.input}
-
+              className={`${ContactStyle.input} ${formik.touched.subject && formik.errors.subject && ContactStyle.border}`}
               onChange={formik.handleChange}
               value={formik.values.subject}
               onBlur={formik.handleBlur}
@@ -111,11 +110,11 @@ const Contact = () => {
               placeholder="Subject"
               name="subject"
             />
-            {formik.touched.message && formik.errors.message ? (
+            {/* {formik.touched.message && formik.errors.message ? (
               <div className="errors"></div>
-            ) : null}
+            ) : null} */}
             <textarea
-              className={ContactStyle.textarea}
+              className={`${ContactStyle.textarea} ${formik.touched.message && formik.errors.message && ContactStyle.border}`}
               onChange={formik.handleChange}
               value={formik.values.user_message}
               onBlur={formik.handleBlur}

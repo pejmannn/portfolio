@@ -17,7 +17,7 @@ export const ContactStyle = {
     md:w-[250px] md:h-[250px]
     sm:w-[250px] sm:h-[250px]
     w-[200px] h-[200px]`,
-    input: `text-white bg-inherit border border-[#D1D1D1] 2xl:py-1 2xl:p-1 2xl:pl-3  2xl:rounded-[4px]
+    input: `text-white bg-inherit outline-none border border-[#D1D1D1] 2xl:py-1 2xl:p-1 2xl:pl-3  2xl:rounded-[4px]
     xl:pl-2  xl:rounded-[2px] xl:text-sm xl:py-1
     lg:pl-2  lg:rounded-[2px] lg:text-sm lg:py-1
     md:pl-2  md:rounded-[2px] md:text-[0.8rem] md:py-[3px]
@@ -27,4 +27,5 @@ export const ContactStyle = {
     lg:pl-2  lg:rounded-[2px] lg:h-28 lg:text-sm lg:py-1
     md:pl-2  md:rounded-[2px] md:h-20 md:text-sm md:py-1
     sm:pl-2  sm:rounded-[2px] sm:h-20 sm:text-sm sm:py-1`,
+    border: `border-1 border-red-500 shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)]`
 }
