@@ -7,7 +7,7 @@ const AboutMe = () => {
         <div>
           <img
             className={AboutStyle.imageOne}
-            src="/public/images/image1.png"
+            src="/images/image1.png"
             alt=""
           />
         </div>

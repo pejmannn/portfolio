@@ -63,7 +63,7 @@ const Contact = () => {
       <div className={ContactStyle.ctMain}>
         <div>
           <img
-            src="/public/images/image2.png"
+            src="/images/image2.png"
             className={ContactStyle.imageTwo}
             alt=""
           />

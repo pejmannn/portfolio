@@ -7,7 +7,7 @@ const Home = () => {
       <section>
         <img
           className={HomeStyles.images}
-          src="/public/images/pejman.jpg"
+          src="/images/pejman.jpg"
           alt="Pejman Avatar"
         />
       </section>
