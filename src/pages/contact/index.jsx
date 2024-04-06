@@ -2,6 +2,8 @@ import { ContactStyle } from "./style";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useFormik } from "formik";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./contact.css";
 
 const Contact = () => {
@@ -35,15 +37,21 @@ const Contact = () => {
     },
     validate,
     onSubmit: (value) => {
-      alert(JSON.stringify(value, null, 2));
       emailjs
         .sendForm("service_31onzql", "template_9msm2hc", value, {
           publicKey: "0n6P60s_euTh2aSDj",
         })
         .then(
-          () => {},
+          () => {
+            toast.success("Successful", {
+              style: { color: "black", backgroundColor: "black" },
+            });
+          },
           (error) => {
             console.log("FAILED...", error.text);
+            toast.error("Failed", {
+              style: { color: "black", backgroundColor: "black" },
+            });
           }
         );
     },
@@ -122,13 +130,17 @@ const Contact = () => {
               ) : null}
             </div>
 
-            <button
-              type="submit"
-              className="text-center bg-white text-black 2xl:w-28 2xl:py-1 2xl:px-3 rounded-full
+            <div>
+              <button
+                onClick={formik.handleSubmit}
+                type="submit"
+                className="text-center bg-white text-black 2xl:w-28 2xl:py-1 2xl:px-3 rounded-full
             xl:w-24 lg:w-24 text-sm md:w-20 md:text-sm sm:w-20 sm:text-sm"
-            >
-              Send
-            </button>
+              >
+                Send
+              </button>
+              <ToastContainer />
+            </div>
           </form>
         </div>
       </div>
