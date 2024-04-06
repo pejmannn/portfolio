@@ -2,7 +2,7 @@ import "./default.css";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/navbar/navbar";
 
-const DefaultLayout = ({}) => {
+const DefaultLayout = () => {
   return (
     <section className="layout-main">
       <Outlet />

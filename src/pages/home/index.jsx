@@ -3,7 +3,7 @@ import { HomeStyles } from "./styles.js";
 
 const Home = () => {
   return (
-    <article className="flex flex-col gap-6 items-center">
+    <article className="flex flex-col gap-6 items-center ">
       <section>
         <img
           className={HomeStyles.images}

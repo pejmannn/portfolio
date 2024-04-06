@@ -59,7 +59,7 @@ const Contact = () => {
 
   return (
     <div>
-      <h1 className={ContactStyle.contactTitle}>-CONTACT ME-</h1>
+      <h1 className={ContactStyle.contactTitle}>&#60;CONTACT ME /&#62;</h1>
       <div className={ContactStyle.ctMain}>
         <div>
           <img
