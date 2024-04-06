@@ -3,7 +3,7 @@ import { HomeStyles } from "./styles.js";
 
 const Home = () => {
   return (
-    <article className="flex flex-col gap-6 items-center ">
+    <article className="flex flex-col gap-6 items-center h-dvh">
       <section>
         <img
           className={HomeStyles.images}
@@ -26,7 +26,7 @@ const Home = () => {
 
       <section className="flex gap-4 flex-col md:flex-row">
         <Button title="Contact 🤙" />
-        <Button title="Resume 📥" type="outline" />
+        <Button title="Resume 📥" type="outline" isLink link="/pejmanCV.pdf"  />
       </section>
     </article>
   );
