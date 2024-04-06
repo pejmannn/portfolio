@@ -25,7 +25,7 @@ const Home = () => {
       </section>
 
       <section className="flex gap-4 flex-col md:flex-row">
-        <Button title="Contact 🤙 " />
+        <Button title="Contact 🤙" />
         <Button title="Resume 📥" type="outline" />
       </section>
     </article>
