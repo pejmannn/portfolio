@@ -11,7 +11,7 @@ const AboutMe = () => {
         </div>
         <div className="text-justify md:w-6/12 flex flex-col gap-5">
           <div>
-            <p className={`text-base md:text-sm`}>
+            <p className={`text-base md:text-lg`}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               a feugiat tellus. Vivamus lorem eros, tempus a orci vel, feugiat
               viverra ligula. Ut mauris metus, feugiat vitae suscipit sit amet,

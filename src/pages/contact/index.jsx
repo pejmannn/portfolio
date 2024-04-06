@@ -135,7 +135,7 @@ const Contact = () => {
                 onClick={formik.handleSubmit}
                 type="submit"
                 className="text-center bg-white text-black 2xl:w-28 2xl:py-1 2xl:px-3 rounded-full
-            xl:w-24 lg:w-24 text-sm md:w-20 md:text-sm sm:w-20 sm:text-sm"
+            xl:w-24 lg:w-24 text-sm md:w-20 md:text-sm sm:w-20 sm:text-sm w-20 p-1 mb-3"
               >
                 Send
               </button>
