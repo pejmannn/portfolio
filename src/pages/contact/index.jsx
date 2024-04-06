@@ -2,34 +2,26 @@ import { ContactStyle } from "./style";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useFormik } from "formik";
-import './contact.css'
+import "./contact.css";
 
 const Contact = () => {
   const form = useRef();
   const validate = (values) => {
     const errors = {};
 
-    if (!values.user_name) {
-      errors.user_name = "please fill the name";
-    } else if (values.user_name.length > 0) {
+    if (values.user_name.length <= 0) {
       errors.user_name = "Required";
     }
 
-    if (!values.user_email) {
-      errors.user_email = "please fill the name";
-    } else if (values.user_email.length < 4) {
+    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.user_email)) {
       errors.user_email = "Required";
     }
 
-    if (!values.subject) {
-      errors.subject = "please fill the name";
-    } else if (values.subject.length > 0) {
+    if (values.subject.length <= 0) {
       errors.subject = "Required";
     }
 
-    if (!values.message) {
-      errors.message = "please fill the name";
-    } else if (values.message.length > 0) {
+    if (values.message.length <= 0) {
       errors.message = "Required";
     }
     return errors;
@@ -64,66 +56,71 @@ const Contact = () => {
         <div>
           <img
             src="/images/image2.png"
-            className={ContactStyle.imageTwo}
+            className={`${ContactStyle.imageTwo}`}
             alt=""
           />
         </div>
+
         <div>
           <form
             className="flex flex-col gap-4"
             ref={form}
             onSubmit={formik.handleSubmit}
           >
-            {/* {formik.touched.user_name && formik.errors.user_name ? (
-              <div className="errors"></div>
-            ) : null} */}
-            <input
-              className={`${ContactStyle.input} ${formik.touched.user_name && formik.errors.user_name && ContactStyle.border}`}
-              onChange={formik.handleChange}
-              value={formik.values.user_name}
-              onBlur={formik.handleBlur}
-              type="text"
-              placeholder="Name"
-              name="user_name"
-            />
-            {/* {formik.touched.user_email && formik.errors.user_email ? (
-              <div className="errors"></div>
-            ) : null} */}
-            <input
-              className={`${ContactStyle.input} ${formik.touched.user_email && formik.errors.user_email && ContactStyle.border}`}
-              onChange={formik.handleChange}
-              value={formik.values.user_email}
-              onBlur={formik.handleBlur}
-              type="email"
-              placeholder="Email"
-              name="user_email"
-            />
-            {/* {formik.touched.subject && formik.errors.subject ? (
-              <div className="errors"></div>
-            ) : null} */}
-            <input
-              className={`${ContactStyle.input} ${formik.touched.subject && formik.errors.subject && ContactStyle.border}`}
-              onChange={formik.handleChange}
-              value={formik.values.subject}
-              onBlur={formik.handleBlur}
-              type="text"
-              placeholder="Subject"
-              name="subject"
-            />
-            {/* {formik.touched.message && formik.errors.message ? (
-              <div className="errors"></div>
-            ) : null} */}
-            <textarea
-              className={`${ContactStyle.textarea} ${formik.touched.message && formik.errors.message && ContactStyle.border}`}
-              onChange={formik.handleChange}
-              value={formik.values.user_message}
-              onBlur={formik.handleBlur}
-              name="message"
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Message..."
-            ></textarea>
+            <div className="">
+              <input
+                className={`${ContactStyle.input} ${
+                  formik.errors.user_name ? ContactStyle.error : ""
+                } `}
+                onChange={formik.handleChange}
+                value={formik.values.user_name}
+                type="text"
+                placeholder="Name"
+                name="user_name"
+              />
+            </div>
+            <div className="">
+              <input
+                className={`${ContactStyle.input} ${
+                  formik.errors.user_email ? ContactStyle.error : ""
+                } `}
+                onChange={formik.handleChange}
+                value={formik.values.user_email}
+                type="text"
+                placeholder="Email"
+                name="user_email"
+              />
+            </div>
+            <div className="">
+              <input
+                className={`${ContactStyle.input} ${
+                  formik.errors.subject ? ContactStyle.error : ""
+                } `}
+                onChange={formik.handleChange}
+                value={formik.values.subject}
+                type="text"
+                placeholder="Subject"
+                name="subject"
+              />
+            </div>
+
+            <div>
+              <textarea
+                className={`${ContactStyle.textarea} ${
+                  formik.errors.message ? ContactStyle.error : ""
+                }`}
+                onChange={formik.handleChange}
+                value={formik.values.message}
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Message..."
+              ></textarea>
+              {formik.touched.message && formik.errors.message ? (
+                <div className="errors"></div>
+              ) : null}
+            </div>
 
             <button
               type="submit"
