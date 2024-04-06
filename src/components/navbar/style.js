@@ -1,5 +1,5 @@
 export const NavbarStyle = {
-    navbarMain: `flex justify-around items-center m-auto 2xl:w-1/4 2xl:h-20 bg-nav rounded-full fixed left-0 right-0 bottom-12
+    navbarMain: `flex justify-around items-center m-auto 2xl:w-1/4 2xl:h-20 bg-nav rounded-full fixed left-0 right-0 bottom-14 
     xl:h-12 xl:w-1/4
     lg:h-10 lg:w-1/4
     md:h-9 md:w-1/4

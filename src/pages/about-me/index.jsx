@@ -31,22 +31,22 @@ const AboutMe = () => {
           "
           >
             <div>
-              <img src="/icons/Next.svg" alt="" />
+              <img className={AboutStyle.stackIcons} src="/icons/Next.svg" alt="" />
             </div>
             <div>
-              <img src="/icons/React.svg" alt="" />
+              <img className={AboutStyle.stackIcons} src="/icons/React.svg" alt="" />
             </div>
             <div>
-              <img src="/icons/Tailwind.svg" alt="" />
+              <img className={AboutStyle.stackIcons} src="/icons/Tailwind.svg" alt="" />
             </div>
             <div>
-              <img src="/icons/FairBase.svg" alt="" />
+              <img className={AboutStyle.stackIcons} src="/icons/FairBase.svg" alt="" />
             </div>
             <div>
-              <img src="/icons/Javascript.svg" alt="" />
+              <img className={AboutStyle.stackIcons} src="/icons/Javascript.svg" alt="" />
             </div>
             <div>
-              <img src="/icons/Typescript.svg" alt="" />
+              <img className={AboutStyle.stackIcons} src="/icons/Typescript.svg" alt="" />
             </div>
           </div>
         </div>
