@@ -10,7 +10,7 @@ const Home = () => {
           className={HomeStyles.images}
           initial={{y:'-550px'}}
           animate={{y:'-10px'}}
-          transition={{delay:0.3, type:'spring'}}
+          transition={{duration:0.3, type:'spring', stiffness: 140, }}
           src="/images/pejman.jpg"
           alt="Pejman Avatar"
         />
