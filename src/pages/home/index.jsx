@@ -1,6 +1,6 @@
 import Button from "../../components/button/index.jsx";
 import { HomeStyles } from "./styles.js";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -8,29 +8,22 @@ const Home = () => {
       <section>
         <motion.img
           className={HomeStyles.images}
-          initial={{y:'-550px'}}
-          animate={{y:'-10px'}}
-          transition={{duration:0.3, type:'spring', stiffness: 140, }}
+          initial={{ y: "-550px" }}
+          animate={{ y: "-20px" }}
+          transition={{ duration: 1, type: "spring", stiffness: 120 }}
           src="/images/pejman.jpg"
           alt="Pejman Avatar"
         />
       </section>
 
       <section className="text-center">
-        <h1
-          className={HomeStyles.heroTitle}
-        >
-          PEJMAN KHANI
-        </h1>
-        <h3
-          className={HomeStyles.subTitle}>
-          FRONT-END DEVELOPER
-        </h3>
+        <h1 className={HomeStyles.heroTitle}>PEJMAN KHANI</h1>
+        <h3 className={HomeStyles.subTitle}>FRONT-END DEVELOPER</h3>
       </section>
 
       <section className="flex gap-4 flex-col md:flex-row">
         <Button title="Contact 🤙" />
-        <Button title="Resume 📥" type="outline" isLink link="/pejmanCV.pdf"  />
+        <Button title="Resume 📥" type="outline" isLink link="/pejmanCV.pdf" />
       </section>
     </article>
   );
