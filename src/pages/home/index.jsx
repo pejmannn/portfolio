@@ -1,12 +1,16 @@
 import Button from "../../components/button/index.jsx";
 import { HomeStyles } from "./styles.js";
+import { motion } from 'framer-motion'
 
 const Home = () => {
   return (
     <article className="flex flex-col gap-6 items-center h-dvh">
       <section>
-        <img
+        <motion.img
           className={HomeStyles.images}
+          initial={{y:'-550px'}}
+          animate={{y:'-10px'}}
+          transition={{delay:0.3, type:'spring'}}
           src="/images/pejman.jpg"
           alt="Pejman Avatar"
         />
