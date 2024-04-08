@@ -1,5 +1,8 @@
 import "./navbar.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
+
 
 const navs = [
   {
@@ -30,7 +33,11 @@ const Navbar = () => {
             return (
               <li key={`${nav.name}-${index}`} className="px-2 py-1">
                 <Link to={nav.link}>
-                  <img className="h-7 w-7" src={nav.icon} alt={nav.name} />
+                  <motion.img className="h-7 w-7"
+                  whileHover={{
+                    scale:1.3,
+                  }}
+                  src={nav.icon} alt={nav.name} />
                 </Link>
               </li>
             );

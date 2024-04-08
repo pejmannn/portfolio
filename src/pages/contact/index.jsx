@@ -5,6 +5,7 @@ import { useFormik } from "formik";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./contact.css";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const form = useRef();
@@ -59,17 +60,28 @@ const Contact = () => {
 
   return (
     <div>
-      <h1 className={ContactStyle.contactTitle}>&#60;CONTACT ME /&#62;</h1>
+      <motion.h1 className={ContactStyle.contactTitle}
+            initial={{opacity:0}}
+            animate={{opacity:1}}
+            transition={{delay:0.3, duration:0.6}}>&#60;CONTACT ME /&#62;
+      </motion.h1>
       <div className={ContactStyle.ctMain}>
-        <div>
+        <motion.div 
+                initial={{x:'-100vw'}}
+                animate={{x:0}}
+                transition={{duration:0.3}}
+                >
           <img
             src="/images/image2.png"
             className={`${ContactStyle.imageTwo}`}
             alt=""
           />
-        </div>
+        </motion.div>
 
-        <div>
+        <motion.div
+                initial={{x:'100vw'}}
+                animate={{x:0}}
+                transition={{duration:0.3}}>
           <form
             className="flex flex-col gap-4"
             ref={form}
@@ -131,18 +143,20 @@ const Contact = () => {
             </div>
 
             <div>
-              <button
+              <motion.button
                 onClick={formik.handleSubmit}
                 type="submit"
                 className="text-center bg-white text-black 2xl:w-28 2xl:py-1 2xl:px-3 rounded-full
             xl:w-24 lg:w-24 text-sm md:w-20 md:text-sm sm:w-20 sm:text-sm w-20 p-1 mb-3"
-              >
+            initial={{opacity:0}}
+            animate={{opacity:1}}
+            transition={{delay:0.7, duration:0.6}}>
                 Send
-              </button>
+              </motion.button>
               <ToastContainer />
             </div>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

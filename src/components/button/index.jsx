@@ -1,10 +1,11 @@
 import { ButtonStyles } from "./styles";
+import { motion } from "framer-motion";
 
 // eslint-disable-next-line react/prop-types
 const Button = ({ title, type, isLink, link, ...otherProps }) => {
   if (isLink) {
     return (
-      <a
+      <motion.a 
         href={link}
         download
         className={`rounded-full px-6 py-2
@@ -19,13 +20,16 @@ const Button = ({ title, type, isLink, link, ...otherProps }) => {
       type !== "outline" ? ButtonStyles.default : ButtonStyles.outline
     }`}
         {...otherProps}
-      >
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0px 0px 8px black"
+        }}>
         {title}
-      </a>
+      </motion.a>
     );
   }
   return (
-    <button
+    <motion.button
       {...otherProps}
       className={`rounded-full px-6 py-2
         min-w-28 
@@ -38,9 +42,13 @@ const Button = ({ title, type, isLink, link, ...otherProps }) => {
         lg:text-lg ${
           type !== "outline" ? ButtonStyles.default : ButtonStyles.outline
         }`}
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0px 0px 8px white"
+        }}
     >
       {title}
-    </button>
+    </motion.button>
   );
 };
 
