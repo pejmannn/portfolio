@@ -2,9 +2,19 @@ import Button from "../../components/button/index.jsx";
 import { HomeStyles } from "./styles.js";
 import { motion } from "framer-motion";
 
+const containerVariants = {
+  exit: {
+    y: '-100vw',
+    transition:{
+      ease: 'easeInOut'
+    }
+  }
+}
 const Home = () => {
   return (
-    <article className="flex flex-col gap-6 items-center h-dvh">
+    <motion.article className="flex flex-col gap-6 items-center h-dvh"
+    variants={containerVariants}
+    exit="exit">
       <section>
         <motion.img
           className={HomeStyles.images}
@@ -29,7 +39,7 @@ const Home = () => {
         <Button title="Contact 🤙" />
         <Button title="Resume 📥" type="outline" isLink link="/pejmanCV.pdf" />
       </motion.section>
-    </article>
+    </motion.article>
   );
 };
 

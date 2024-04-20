@@ -6,7 +6,14 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./contact.css";
 import { motion } from "framer-motion";
-
+const containerVariants = {
+  exit: {
+    y: '-100vw',
+    transition:{
+      ease: 'easeInOut'
+    }
+  }
+}
 const Contact = () => {
   const form = useRef();
   const validate = (values) => {
@@ -40,7 +47,7 @@ const Contact = () => {
     onSubmit: (value) => {
       emailjs
         .sendForm("service_31onzql", "template_9msm2hc", value, {
-          publicKey: "0n6P60s_euTh2aSDj",
+          publicKey: "iEIUKs25JtOFTwhqr",
         })
         .then(
           () => {
@@ -59,7 +66,9 @@ const Contact = () => {
   });
 
   return (
-    <div>
+    <motion.div
+    variants={containerVariants}
+    exit="exit">
       <motion.h1 className={ContactStyle.contactTitle}
             initial={{opacity:0}}
             animate={{opacity:1}}
@@ -158,7 +167,7 @@ const Contact = () => {
           </form>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

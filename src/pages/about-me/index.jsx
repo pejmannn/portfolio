@@ -1,8 +1,18 @@
 import { AboutStyle } from "./style";
 import { motion } from "framer-motion";
+const containerVariants = {
+  exit: {
+    y: '-100vw',
+    transition:{
+      ease: 'easeInOut'
+    }
+  }
+}
 const AboutMe = () => {
   return (
-    <div>
+    <motion.div
+    variants={containerVariants}
+    exit="exit">
       <motion.h1
         className={AboutStyle.aboutTitle}
         initial={{ opacity: 0 }}
@@ -12,7 +22,7 @@ const AboutMe = () => {
         &#60;ABOUT ME /&#62;
       </motion.h1>
       <div
-        className={`w-11/12 md:w-8/12 mx-auto flex gap-14 mt-16 flex-col md:flex-row`}
+        className={`w-11/12 md:w-8/12 mx-auto flex gap-14 mt-10 flex-col md:flex-row`}
       >
         <motion.div
           className="flex justify-center"
@@ -101,7 +111,7 @@ const AboutMe = () => {
           </motion.div>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
