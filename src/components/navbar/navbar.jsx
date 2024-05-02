@@ -24,7 +24,7 @@ const navs = [
 
 const Navbar = () => {
   return (
-    <nav className="fixed bottom-12 md:bottom-24 left-0 right-0 h-12 min-w-56 max-w-72 mx-auto py-1">
+    <nav className="fixed 2xl:bottom-8 xl:bottom-5 bottom-12 md:bottom-24 left-0 right-0 h-12 min-w-56 max-w-72 mx-auto py-1">
       <div className="relative w-full h-12 flex justify-center ">
         <div className="bg-nav h-12 min-w-56 max-w-72 absolute rounded-full backdrop-blur-sm " />
         

@@ -5,7 +5,7 @@ export const ContactStyle = {
     md:text-lg
     sm:text-md
     text-md pt-4 md:pt-10`,
-    ctMain : `flex gap-4 flex-col md:flex-row items-center justify-center pt-3 mt-16`,
+    ctMain : `flex gap-10 flex-col md:flex-row items-center justify-center mt-16`,
     imageTwo : `w-72 h-72 md:w-96 md:h-96 rounded-md`,
     input: `border border-[#D1D1D1] bg-transparent rounded-md px-2 py-1 w-64`,
     textarea: `resize-none rounded-md px-2 py-1 w-64 bg-transparent border border-[#D1D1D1] h-40`,
