@@ -8,14 +8,14 @@ function App() {
   return (
     <main>
       <BrowserRouter>
-        <Routes>
+      <Routes>
           <Route path="/" element={<DefaultLayout />}>
             <Route index element={<Home />} />
             <Route path="/about-me" element={<AboutMe />} />
             <Route path="/contact-me" element={<Contact />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+        </BrowserRouter>
     </main>
   );
 }

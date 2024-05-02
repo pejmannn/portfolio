@@ -6,7 +6,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./contact.css";
 import { motion } from "framer-motion";
-
 const Contact = () => {
   const form = useRef();
   const validate = (values) => {
@@ -40,7 +39,7 @@ const Contact = () => {
     onSubmit: (value) => {
       emailjs
         .sendForm("service_31onzql", "template_9msm2hc", value, {
-          publicKey: "0n6P60s_euTh2aSDj",
+          publicKey: "iEIUKs25JtOFTwhqr",
         })
         .then(
           () => {

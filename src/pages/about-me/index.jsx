@@ -12,7 +12,7 @@ const AboutMe = () => {
         &#60;ABOUT ME /&#62;
       </motion.h1>
       <div
-        className={`w-11/12 md:w-8/12 mx-auto flex gap-14 mt-16 flex-col md:flex-row`}
+        className={`w-11/12 md:w-8/12 mx-auto flex gap-14 mt-10 flex-col md:flex-row`}
       >
         <motion.div
           className="flex justify-center"
