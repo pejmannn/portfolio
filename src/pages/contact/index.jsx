@@ -1,6 +1,5 @@
 import { ContactStyle } from "./style";
 import { useRef } from "react";
-import emailjs from "@emailjs/browser";
 import { useFormik } from "formik";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
